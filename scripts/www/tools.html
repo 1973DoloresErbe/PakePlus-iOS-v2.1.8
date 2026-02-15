@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <h1>工具</h1>
+        </header>
+        <div class="content">
+            <div class="tools-main-content">
+                <div class="top-bar">
+                    <button id="recharge-btn">充值</button>
+                    <button id="points-btn">积分</button>
+                    <button onclick="window.history.back();">返回</button>
+                </div>
+                <div class="mode-selection">
+                    <button id="mode-select-btn">选择模式</button>
+                </div>
+                <div class="analysis-box">
+                    <p>分析结果将显示在这里...</p>
+                </div>
+                <div class="input-area">
+                    <button class="upload-btn">上传图</button>
+                    <textarea id="user-input" placeholder="请输入内容..."></textarea>
+                </div>
+            </div>
+        </div>
+        <nav class="nav">
+            <a href="social.html" class="nav-item">社交</a>
+            <a href="gamemode.html" class="nav-item">闯关</a>
+            <a href="tools.html" class="nav-item active">工具</a>
+        </nav>
+    </div>
+
+    <!-- 充值弹窗 -->
+    <div id="recharge-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>充值页面</h2>
+            <p>这里是充值选项...</p>
+        </div>
+    </div>
+
+    <!-- 积分弹窗 -->
+    <div id="points-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>积分兑换</h2>
+            <p>当前积分: <span id="current-points">100</span></p>
+            <div>
+                <h3>积分兑换规则</h3>
+                <p>100积分可兑换...</p>
+            </div>
+            <input type="number" id="points-to-exchange" placeholder="输入兑换积分数额">
+            <button id="exchange-btn">兑换</button>
+        </div>
+    </div>
+
+    <!-- 模式选择弹窗 -->
+    <div id="mode-select-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>选择模式</h2>
+            <button class="mode-option-btn" data-mode="empathy">共情分析</button>
+            <button class="mode-option-btn" data-mode="speech">话术分析</button>
+            <button class="mode-option-btn" data-mode="all">我全都要</button>
+        </div>
+    </div>
+
+    <script src="tools.js"></script>
+</body>
+</html>
