@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社交</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header" style="display: flex; justify-content: space-between; align-items: center; padding: 0 10px;">
+            <div class="header-buttons">
+                <button id="points-btn" class="header-btn">积分</button>
+                <button id="redeem-btn" class="header-btn">兑换</button>
+            </div>
+            <a href="index.html" class="header-btn">返回</a>
+        </header>
+        <main class="content social-content">
+            <a href="help.html" class="social-btn-link"><button class="social-btn">求助板块</button></a>
+            <a href="levels.html" class="social-btn-link"><button class="social-btn">自制关卡</button></a>
+        </main>
+        <nav class="nav">
+            <a href="social.html" class="nav-item active">社交</a>
+            <a href="levels.html" class="nav-item">关卡</a>
+            <a href="#" class="nav-item">工具</a>
+        </nav>
+    </div>
+
+    <div id="points-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p>当前积分：</p>
+            <p>积分规则：</p>
+        </div>
+    </div>
+
+    <div id="redeem-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <p>可用积分：</p>
+            <p>兑换积分：</p>
+            <p>兑换规则：</p>
+        </div>
+    </div>
+    <script src="social.js"></script>
+</body>
+</html>
