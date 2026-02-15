@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自制关卡</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <a href="levels.html" class="back-btn">&lt;</a>
+            <h1>自制关卡</h1>
+        </header>
+        <main class="content editor-content">
+            <div class="editor-section">
+                <label for="level-name">关卡名称:</label>
+                <input type="text" id="level-name" name="level-name">
+            </div>
+            <div class="editor-section">
+                <label for="public-display">对外展示部分:</label>
+                <textarea id="public-display" name="public-display" rows="5"></textarea>
+            </div>
+            <div class="editor-section">
+                <label for="question-part">提问部分:</label>
+                <textarea id="question-part" name="question-part" rows="5"></textarea>
+            </div>
+            <div class="editor-section">
+                <label for="private-part">不对外展示部分:</label>
+                <textarea id="private-part" name="private-part" rows="5"></textarea>
+            </div>
+            <button class="btn">保存关卡</button>
+        </main>
+        <nav class="nav">
+            <a href="social.html" class="nav-item">社交</a>
+            <a href="levels.html" class="nav-item">关卡</a>
+            <a href="#" class="nav-item">工具</a>
+        </nav>
+    </div>
+</body>
+</html>
