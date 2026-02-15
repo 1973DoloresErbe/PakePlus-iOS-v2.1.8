@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>输入详情</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <a href="tools.html" class="back-btn">&lt;</a>
+            <h1>输入详情</h1>
+            <a href="tools.html" class="back-btn right-btn">&lt;</a>
+        </header>
+        <div class="content">
+            <div class="input-group">
+                <label for="relationship">人物关系</label>
+                <textarea id="relationship" rows="3"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="event">大概事件</label>
+                <textarea id="event" rows="5"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="request">你的诉求</label>
+                <textarea id="request" rows="3"></textarea>
+            </div>
+            <button id="confirm-btn" class="confirm-btn">确定</button>
+        </div>
+        <nav class="nav">
+            <a href="social.html" class="nav-item">社交</a>
+            <a href="gamemode.html" class="nav-item">闯关</a>
+            <a href="tools.html" class="nav-item active">工具</a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+    <script src="input_details.js"></script>
+</body>
+</html>
